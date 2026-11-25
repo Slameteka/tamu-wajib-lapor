@@ -7,6 +7,7 @@ Format: tanggal — inisial (A/B/C) — fase — apa yang dilakukan — hasil/ve
 |---|---|---|---|---|
 | 2026-11-25 | — | setup | Inisialisasi repo Git, `.gitignore`, struktur folder progress | repo lokal siap, commit pertama |
 | 2026-11-25 | A | F2 | Instal step-cli + step-ca di VPS (via .deb/scp), Root CA tersedia; `PROGRESS-PKI.md` ditambahkan | paket terpasang; init CA/systemd/ACME/offline belum terverifikasi |
+| 2026-11-25 | A | F2 | Fase 2 selesai: `step ca init` (Root+Intermediate), systemd `step-ca` jalan, provisioner ACME aktif, Root dibackup offline | `/health`=ok, `Serving HTTPS on :9000`, fingerprint Root `b73c4097...b093c0`; sisa: konfirmasi `shred` Root key di VPS |
 
 <!--
 Contoh entri berikutnya:
