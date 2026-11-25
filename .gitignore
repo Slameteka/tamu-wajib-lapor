@@ -1,0 +1,92 @@
+# ============================================================
+# .gitignore — Projek Private PKI + Full HTTPS Internal
+# Tujuan: MENCEGAH rahasia (kunci privat, password, env) masuk Git.
+# Rujukan PRD: FR-24, FR-70, NFR-01, Risiko R2 (password/kunci CA bocor).
+# ATURAN EMAS: kunci privat & password TIDAK PERNAH di-commit.
+# ============================================================
+
+# ---------- Environment & konfigurasi rahasia ----------
+.env
+.env.*
+*.env
+env/
+.envrc
+secrets/
+secret/
+*.secret
+credentials
+credentials.*
+*password*
+*passwd*
+password.txt
+provisioner-password*
+
+# ---------- Kunci privat / PKI ----------
+# Kunci privat dalam berbagai format
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+*.ppk
+
+# step-ca / Smallstep
+secrets/root_ca_key
+secrets/intermediate_ca_key
+secrets/*_key
+*_ca_key
+root_ca_key*
+intermediate_ca_key*
+.step/
+
+# Let's Encrypt / certbot (berisi privkey)
+letsencrypt/
+live/
+archive/
+privkey*.pem
+
+# CATATAN: jika ingin menyimpan sertifikat PUBLIK (bukan kunci) sebagai bukti,
+# simpan HANYA *_ca.crt / fullchain tanpa key, dan tambahkan pengecualian manual:
+#   !configs/certs/root_ca.crt
+# File .crt publik aman; file .key TIDAK pernah aman.
+
+# ---------- Database dump (berisi data pengguna) ----------
+*.sql
+*.sql.gz
+*.dump
+roundcube-*.sql
+
+# ---------- Backup & arsip ----------
+*.bak
+*.bak.*
+*.tgz
+*.tar.gz
+*.tar
+*.zip
+backup/
+konfigurasi-*.tgz
+
+# ---------- Log mentah besar (opsional; LOG.md tetap di-track) ----------
+*.log
+logs/*.log
+!logs/.gitkeep
+
+# ---------- Sistem & editor ----------
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+.idea/
+.vscode/
+*.tmp
+
+# ---------- Node / tooling (jika ada skrip pembantu) ----------
+node_modules/
+__pycache__/
+*.pyc
