@@ -6,6 +6,7 @@ Format: tanggal — inisial (A/B/C) — fase — apa yang dilakukan — hasil/ve
 | Tanggal | Oleh | Fase | Perubahan | Hasil / verifikasi |
 |---|---|---|---|---|
 | 2026-11-25 | — | setup | Inisialisasi repo Git, `.gitignore`, struktur folder progress | repo lokal siap, commit pertama |
+| 2026-11-25 | B | F3 | Installer XAMPP 8.2.12 ditransfer ke VPS (`/tmp`) via scp; port 80/443/3306/21 bebas; `PROGRESS-WEB.md` ditambahkan | installer siap; XAMPP belum di-install (`/opt/lampp` belum ada) |
 
 <!--
 Contoh entri berikutnya:
