@@ -41,7 +41,7 @@ Repositori **progress dan konfigurasi** proyek Administrasi Server: membangun *C
 
 - [ ] Fase 0 — Baseline VPS, chrony, UFW
 - [ ] Fase 1 — Bind9 dasar
-- [ ] Fase 2 — step-ca (Root + Intermediate + ACME)
+- [x] Fase 2 — step-ca (Root + Intermediate + ACME)
 - [ ] Fase 3 — XAMPP + MariaDB, certbot, HTTPS (M1 gembok hijau)
 - [ ] Fase 4 — mTLS + revocation
 - [ ] Fase 5 — DNSSEC, DoT, CAA
