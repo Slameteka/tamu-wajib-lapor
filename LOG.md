@@ -6,6 +6,7 @@ Format: tanggal — inisial (A/B/C) — fase — apa yang dilakukan — hasil/ve
 | Tanggal | Oleh | Fase | Perubahan | Hasil / verifikasi |
 |---|---|---|---|---|
 | 2026-11-25 | — | setup | Inisialisasi repo Git, `.gitignore`, struktur folder progress | repo lokal siap, commit pertama |
+| 2026-11-25 | A | F2 | Instal step-cli + step-ca di VPS (via .deb/scp), Root CA tersedia; `PROGRESS-PKI.md` ditambahkan | paket terpasang; init CA/systemd/ACME/offline belum terverifikasi |
 
 <!--
 Contoh entri berikutnya:
