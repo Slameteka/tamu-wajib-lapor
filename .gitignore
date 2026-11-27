@@ -20,6 +20,22 @@ credentials.*
 *passwd*
 password.txt
 provisioner-password*
+# Catatan kredensial manual (JANGAN di-commit — berisi password VPS/CA/DB)
+kreds.md
+kreds*
+*kreds*
+*kredensial*
+creds.md
+creds*
+
+# ---------- Installer / binary besar ----------
+xampp/
+*.run
+*.deb
+*.rpm
+*.AppImage
+*.iso
+*.img
 
 # ---------- Kunci privat / PKI ----------
 # Kunci privat dalam berbagai format
